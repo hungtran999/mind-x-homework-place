@@ -1,1 +1,0 @@
-# mind-x-homework-place
