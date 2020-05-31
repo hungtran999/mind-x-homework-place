@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.doc {
+  display: flex;
+  flex-direction: row;
+}
+.v-hong {
+  background-color: salmon;
+
+  width: 90px;
+  height: 70px;
+}
+.n-van {
+  background-color: rgb(88, 88, 223);
+
+  background-image: linear-gradient(transparent 50%, rgb(50, 102, 50) 50%);
+  background-size: 30px 30px;
+  width: 90px;
+  height: 145px;
+  margin-top: 20px;
+}
+.xam {
+  background-color: rgb(209, 202, 202);
+  width: 90px;
+  height: 145px;
+  margin-top: 40px;
+}
+.xam2 {
+  background-color: rgb(209, 202, 202);
+  width: 90px;
+  height: 145px;
+  margin-top: 10px;
+}
+.xanhto {
+  position: absolute;
+  background-color: rgb(151, 240, 156);
+  width: 550px;
+  height: 270px;
+  margin-left: 15px;
+}
+
+.xanhdam1 {
+  position: relative;
+  background-color: green;
+  width: 136px;
+  height: 45px;
+  margin-top: 270px;
+  margin-left: 15px;
+}
+.xanhdam2 {
+  position: relative;
+  background-color: green;
+  width: 136px;
+  height: 45px;
+  margin-top: 270px;
+  margin-left: 2px;
+}
+.trang {
+  position: relative;
+  background-color: white;
+  width: 136px;
+  height: 30px;
+  margin-top: 170px;
+  margin-left: 414px;
+}
+.den {
+  position: relative;
+  background-color: black;
+  width: 200px;
+  height: 25px;
+  margin-left: 350px;
+}
+
+.xanhnhat {
+  background-color: rgb(16, 236, 225);
+  margin-top: 20px;
+  margin-left: 15px;
+  width: 330px;
+  height: 30px;
+}
+.hong {
+  background-color: rgb(236, 16, 144);
+  margin-top: 20px;
+  width: 220px;
+  height: 30px;
+}
+.nau1 {
+  background-color: rgb(224, 192, 47);
+  margin-top: 20px;
+  margin-left: 15px;
+  height: 75px;
+  width: 124px;
+}
+.nau2 {
+  background-color: rgb(224, 192, 47);
+  margin-top: 20px;
+  margin-left: 18px;
+  height: 75px;
+  width: 124px;
+}
+.hongphan1 {
+  background-color: rgb(248, 85, 125);
+  margin-top: 5px;
+  margin-left: 15px;
+  height: 150px;
+  width: 124px;
+}
+.hongphan2 {
+  background-color: rgb(248, 85, 125);
+  margin-top: 5px;
+  margin-left: 18px;
+  height: 150px;
+  width: 124px;
+}
+.xamngang {
+  background-color: rgb(209, 202, 202);
+  width: 655px;
+  height: 55px;
+  margin-top: 20px;
+}
