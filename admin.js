@@ -75,7 +75,7 @@ function Login(){
     document.getElementById("before-login").style.display = "none";
     document.getElementById("after-login").style.display = "block";
   } else {
-    document.getElementById("failed").innerHTML = "Ngu ! dcmm co cai mat khau ma cung quen";
+    document.getElementById("failed").innerHTML = "Ngu !";
   }
 }
 
