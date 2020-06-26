@@ -1,14 +1,8 @@
-// function Myfunction() {
-//   var x = document.getElementById("name").value;
-//   document.getElementById("demo").innerHTML = x;
-//   var y = document.getElementById("anh").value;
-//   document.getElementById("demoanh").children = y;
-// }
 
 window.onload = function () {
   let mainForm = document.getElementById("main-form");
 
-  let inputValue = document.querySelector('input[type="text"]');
+  let inputValue = document.querySelector('#name');
   let inputImg = document.querySelector('input[type="file"]');
   let box_content = document.querySelector(".box-content");
   // let anh_content = document.querySelector(".anh-content");
@@ -24,13 +18,13 @@ window.onload = function () {
     let btnDelete = document.createElement("button");
     setCssBtn(btnDelete);
     imgElement.textContent = `${inputImg.value}`;
+    setStyleImg(imgElement);
     pElement.textContent = `${inputValue.value}`;
     let folder = "image/";
     imgElement.setAttribute(
       "src",
-      folder.concat(imgElement.textContent.substring(12, 20))
+      folder.concat(imgElement.textContent.substring(12))
     );
-    // console.log(folder.concat(imgElement.textContent.substring(12, 20)), img);
     if (pElement.textContent !== "") {
       btnDelete.textContent = "DELETE";
       localStorage.setItem(
@@ -57,10 +51,37 @@ function setCssBtn(x) {
   x.style.borderRadius = "3px";
   x.style.marginBottom = "5px";
 }
-
+function setStyleImg(x) {
+  x.style.width = "200px";
+  x.style.height = "200px";
+}
 function setCssP(x) {
   x.style.display = "block";
   x.style.width = "70%";
   x.style.padding = "10px";
   x.style.margin = "5px";
+}
+
+function DisplayLogin() {
+  document.getElementById("show-login").style.display = "block"
+}
+
+function Login(){
+  var user = document.getElementById("user").value;
+  var pass = document.getElementById("password").value;
+  if (user === "admin" && pass === "1") {
+    alert('Đăng nhập thành công !')
+    document.getElementById("show-login").style.display = "none";
+    document.getElementById("before-login").style.display = "none";
+    document.getElementById("after-login").style.display = "block";
+  } else {
+    document.getElementById("failed").innerHTML = "Ngu ! dcmm co cai mat khau ma cung quen";
+  }
+}
+
+function DisplayForm() {
+  document.getElementById("show-form-add").style.display = "block"
+}
+function hideForm() {
+  document.getElementById("show-form-add").style.display = "none"
 }

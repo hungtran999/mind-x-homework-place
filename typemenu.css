@@ -29,6 +29,7 @@ a:hover p {
   display: block;
   margin-top: 0px;
   margin-bottom: 20px;
+  cursor: pointer;
 }
 .login ul li {
   display: inline-block;
@@ -293,4 +294,17 @@ span#btn-next {
   width: auto;
   border-radius: 20%;
   margin-top: 30px;
+}
+
+#show-login, #show-form-add {
+  display: none;
+  float: right;
+}
+.login-form, .add-form {
+  margin: 10px;
+}
+
+#after-login {
+  display: none;
+  margin-right: 10px;
 }
